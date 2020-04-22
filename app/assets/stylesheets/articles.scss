@@ -1,3 +1,30 @@
 // Place all the styles related to the articles controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+.margin-top-5per {
+  margin-top: 5%;
+}
+
+.bg-white {
+  background-color: #ddd;
+  border: solid 1px #d8d4d4;
+}
+
+.padding-top-15px {
+  padding-top: 15px;
+}
+
+p.title {
+  font-size: 20px;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  color: chocolate;
+}

@@ -1,2 +1,14 @@
-<h1>きみちゃんブログ</h1>
-<div>一覧が入ります</div>
+<div class="container">
+  <h1 class="text-center">きみちゃんブログ</h1>
+  <% @articles.each do |article| %>
+    <div class="col-md-3 margin-top-5per bg-white">
+      <%= link_to article do %>
+        <div class="padding-top-15px">
+          <%= image_tag 'pug.jpg', class: 'img-responsive' %>
+          <p class="title"><%= article.title %><p>
+          <p><%= l article.created_at %></p>
+        </div>
+      <% end %>
+    </div>
+  <%end %> 
+<div>
