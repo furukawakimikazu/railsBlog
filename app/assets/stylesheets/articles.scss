@@ -28,3 +28,18 @@ a {
 a:hover {
   color: chocolate;
 }
+
+.show-padding-15px {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.show-position {
+  position: relative;
+}
+.button_to {
+  position: absolute;
+  right: 5px;
+  bottom: 10px;
+}
+

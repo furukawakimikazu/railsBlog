@@ -1,2 +1,15 @@
-<h1>Articles#show</h1>
-<p>Find me in app/views/articles/show.html.erb</p>
+<div class="container">
+  <div class="col-md-12 margin-top-5per bg-white show-padding-15px show-position">
+    <div class="">
+      <div class="">
+      <%= image_tag 'pug.jpg', class: 'col-md-6' %>
+      </div>
+      <div class="text-center">
+        <p class="title"><%= @article.title %><p>
+        <p><%= l @article.created_at %></p>
+        <p><%= @article.body %></p>
+      </div>
+    </div>
+    <%= button_to "一覧に戻る", root_path, method: :get %>
+  </div>
+<div>
