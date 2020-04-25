@@ -1,2 +1,11 @@
-<h1>Articles#new</h1>
-<p>Find me in app/views/articles/new.html.erb</p>
+<div class="container">
+  <div class="col-md-12 margin-top-5per bg-white show-padding-15px show-position">
+      <h1 class="text-center"> ブログの新規作成 </h1>
+      <div class="col-md-6">
+        <%= image_tag 'pug.jpg', class: 'img-responsive' %>
+      </div>
+
+      <%= render 'form', article: @article %>
+
+  </div>
+</div>

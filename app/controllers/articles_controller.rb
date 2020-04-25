@@ -13,7 +13,9 @@ class ArticlesController < ApplicationController
   end
 
   def edit
+    find_article
   end
+  
 
   def create
     @article = Article.new(article_params)
@@ -25,7 +27,7 @@ class ArticlesController < ApplicationController
   end
 
   def update
-    if @artile.update
+    if @article = update
       redirect_to @article, notice: '更新出来ました。'
     else
       render :edit, alert: '更新できませんでした。'
@@ -46,10 +48,6 @@ class ArticlesController < ApplicationController
       end
 
       def article_params
-        
-      end
-      
-
-  
-  
+        params.require(:article).permit(:title,:body)
+      end  
 end

@@ -1,15 +1,18 @@
 <div class="container">
   <div class="col-md-12 margin-top-5per bg-white show-padding-15px show-position">
-    <div class="">
-      <div class="">
-      <%= image_tag 'pug.jpg', class: 'col-md-6' %>
+    <div class="row">
+      <div class="col-md-6">
+        <%= image_tag 'pug.jpg', class: 'img-responsive' %>
       </div>
-      <div class="text-center">
+      <div class="col-md-6 text-center pull-right">
         <p class="title"><%= @article.title %><p>
         <p><%= l @article.created_at %></p>
         <p><%= @article.body %></p>
       </div>
+      <div class="position">
+        <%= link_to "編集", edit_article_path(@article), class: 'btn btn-primary' %>
+        <%= link_to "一覧に戻る", root_path, class: 'btn btn-primary' %>
+      </div>
     </div>
-    <%= button_to "一覧に戻る", root_path, method: :get %>
   </div>
-<div>
+</div>
