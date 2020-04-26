@@ -27,7 +27,7 @@ class ArticlesController < ApplicationController
   end
 
   def update
-    if @article = update
+    if @article.update(article_params)
       redirect_to @article, notice: '更新出来ました。'
     else
       render :edit, alert: '更新できませんでした。'

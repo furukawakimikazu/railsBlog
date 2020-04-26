@@ -1,6 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
   <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>RailsBlog</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -10,6 +12,12 @@
   </head>
 
   <body>
+    <% if flash[:notice] %>
+      <div class="flash text-right">
+        <%= flash[:notice] %>
+      </div>
+    <% end %>
+    
     <h1 class="text-center"><%= link_to "きみちゃんブログ", root_path %></h1>
     <%= yield %>
   </body>

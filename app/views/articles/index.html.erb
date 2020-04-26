@@ -1,4 +1,7 @@
 <div class="container">
+  <div class="row text-right">
+    <%= link_to '新規作成', new_article_path, class: 'margin-top-5per btn btn-primary margin-top-5px margin-bottom-20px' %>
+  </div>
   <div class="row">
     <% @articles.each do |article| %>
       <div class="col-md-3 margin-top-5per bg-white">
@@ -12,7 +15,4 @@
       </div>
     <%end %> 
   </div>
-  <div class="row">
-    <%= link_to '新規作成', new_article_path, class: 'margin-top-5per btn btn-primary' %>
-  </div>
-<div>
+</div>
