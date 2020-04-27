@@ -54,6 +54,14 @@ a:hover {
 .position1 {
   position: absolute;
   right: 90px;
-  bottom: -11px;
+  bottom: -26px;
 }
 
+// edit, update画面のサイズが大きい時の「作成」ボタン位置
+@media (min-width:1200px) {
+  .position1 {
+    position: absolute;
+    right: 90px;
+    bottom: -92px;
+  }
+}

@@ -4,15 +4,17 @@
             <%= f.label :タイトル, class: 'col-sm-3 control-label' %>
             <%= f.text_field :title, placeholder: 'へのへのもへじ', class: 'col-sm-9' %>
           </div>
-          <div class="form-group">
+          <div class="form-group ">
             <%= f.label :本文, class: 'col-sm-3 control-label'%>
-            <%= f.text_area :body, class: 'col-sm-9', rows: 10 %>
-          <div class="form-group">  
-            <%= f.submit "作成", class: 'btn btn-primary position1' %>
-          </div>
+            <%= f.text_area :body, placeholder: 'ほにゃらら〜ほにゃらら〜', class: 'col-sm-9', rows: 10 %>
+            <div class="position1">
+            <%= f.submit "作成", class: 'btn btn-primary ' %>
+            </div>
         <% end %>
           </div>
       </div>
-      <div class="position">
+        <div class="position">
           <%= link_to "一覧に戻る", root_path, class: 'btn btn-primary' %>
-      </div>
+        </div>
+
+
