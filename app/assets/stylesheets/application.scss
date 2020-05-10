@@ -1,6 +1,7 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 @import "articles";
+@import "home";
 
 * {
   margin: 0;
@@ -8,3 +9,13 @@
 body {
   background-color:#eeeeee;
 }
+
+.login-success {
+  margin-right: 104px;
+}
+
+.login-unsuccess {
+  margin-right: 203px;
+  margin-bottom: -10px;
+}
+
