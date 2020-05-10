@@ -45,6 +45,12 @@ gem 'faker'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  gem 'hirb' # hirb
+  gem 'hirb-unicode' # hirbの日本語対応用
+  gem 'pry-rails'  # pryコンソール
+  gem 'pry-doc'    # メソッドを表示
+  gem 'pry-byebug' # デバッグを実施(Ruby 2.0以降で動作)
+  gem 'pry-stack_explorer' # スタックをたどる
 end
 
 group :development do
