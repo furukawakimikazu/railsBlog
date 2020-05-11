@@ -7,7 +7,7 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 User.create(
-  email: 'furukawa@netvision.tv',
+  email: 'g.guquan@gmail.com',
   password: 'password'
 )
 
@@ -18,3 +18,9 @@ User.create(
   )
 end
 
+50.times do
+  Article.create(
+    title: Faker::Food.fruits,
+    body: 'これは正式な文章の代わりに入れて使うダミーテキストです。本文用なので使い方を間違えると不自然に見えることもありますので要注意。文章に特に深い意味はありません。この組見本は自由に複製したり頒布することができます。書体やレイアウトなどを確認するために用います。本文用なので使い方を間違えると不自然に見えることもありますので要注意。'
+  )
+end
