@@ -1,6 +1,9 @@
       <div class="col-md-6 text-center pull-right form-horizontal">
         <%= form_for article do |f| %>
           <div class="form-group">
+            <%= f.attachment_field :image %>
+          </div>
+          <div class="form-group">
             <%= f.label :タイトル, class: 'col-sm-3 control-label' %>
             <%= f.text_field :title, placeholder: 'へのへのもへじ', class: 'col-sm-9' %>
           </div>

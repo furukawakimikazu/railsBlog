@@ -1,0 +1,12 @@
+{
+  "liveServer.settings.AdvanceCustomBrowserCmdLine": "",
+  "liveServer.settings.host": "",
+  "liveServer.settings.multiRootWorkspaceName": "",
+  "liveServer.settings.proxy": { 
+    "enable": true,
+    "baseUri": "/",
+    "proxyUri": "http://localhost:3000"
+  },
+  "liveServer.settings.useWebExt": true,
+  "liveServer.settings.port": 0
+}

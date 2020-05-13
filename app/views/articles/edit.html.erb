@@ -2,7 +2,7 @@
   <div class="col-md-12 margin-top-5per bg-white show-padding-15px show-position">
       <h1 class="text-center"> ブログの編集 </h1>
       <div class="col-md-6">
-        <%= image_tag 'pug.jpg', class: 'img-responsive' %>
+        <%= render 'imgtag', article: @article %>
       </div>
 
       <%= render 'form', article: @article %>

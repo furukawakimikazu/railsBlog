@@ -1,0 +1,5 @@
+        <% if article.image_id.present?  %>
+          <%= image_tag attachment_url(article, :image), class: 'img-responsive' %>
+        <% else %>
+          <%= image_tag 'pug.jpg', class: 'img-responsive' %> 
+        <% end %>       
